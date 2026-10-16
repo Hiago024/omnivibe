@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#111827">
+<meta name="description" content="OmniVibe: loja virtual de produtos variados, com atendimento e opções de pagamento.">
+<title>OmniVibe — Loja de Variedades</title>
+<style>
+:root{--ink:#172033;--muted:#667085;--bg:#f5f7fb;--paper:#fff;--line:#e5e9f2;--brand:#6d4aff;--brand2:#5134d4;--dark:#111827;--green:#12805c;--radius:18px;--shadow:0 12px 35px #18244312}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}a{text-decoration:none;color:inherit}.announcement{background:var(--brand);color:white;text-align:center;padding:9px 14px;font-size:.86rem;font-weight:700}.topbar{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:15}.nav{max-width:1200px;margin:auto;display:flex;align-items:center;gap:20px;padding:15px 22px}.logo{font-weight:950;font-size:1.55rem;letter-spacing:-1px;white-space:nowrap}.logo span{color:var(--brand)}.search{position:relative;flex:1}.search input{width:100%;border:1px solid var(--line);background:#f8f9fc;border-radius:999px;padding:12px 16px 12px 42px;outline:none}.search input:focus{border-color:var(--brand);box-shadow:0 0 0 3px #6d4aff1e}.search b{position:absolute;left:16px;top:10px;color:var(--muted)}.nav-actions{display:flex;gap:8px}.nav-btn{border:1px solid var(--line);background:#fff;padding:11px 14px;border-radius:999px;font-weight:750;white-space:nowrap}.nav-btn.strong{background:var(--dark);color:#fff;border-color:var(--dark)}.count{display:inline-grid;place-items:center;background:var(--brand);color:white;border-radius:99px;min-width:22px;height:22px;padding:0 5px;margin-left:4px;font-size:.8rem}main{max-width:1200px;margin:auto;padding:24px 22px 60px}.hero{position:relative;overflow:hidden;border-radius:28px;background:radial-gradient(circle at 80% 20%,#8a76ff 0,transparent 30%),linear-gradient(115deg,#111827,#33216e);color:#fff;padding:48px;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;min-height:330px}.eyebrow{color:#dcd5ff;text-transform:uppercase;letter-spacing:1.7px;font-size:.75rem;font-weight:850}.hero h1{font-size:clamp(2.4rem,5vw,4rem);line-height:1.02;letter-spacing:-2px;margin:15px 0;max-width:680px}.hero p{color:#d9dbea;max-width:590px;line-height:1.7}.hero-art{font-size:clamp(7rem,14vw,11rem);text-align:center;filter:drop-shadow(0 16px 25px #0005);transform:rotate(-7deg)}.btn{border:0;border-radius:12px;padding:12px 17px;background:var(--brand);color:#fff;font-weight:800}.btn:hover{background:var(--brand2)}.btn.light{background:#fff;color:#34236f;border-radius:999px;margin-top:12px}.btn.outline{background:#fff;color:var(--ink);border:1px solid var(--line)}.btn.green{background:var(--green)}.btn:disabled{opacity:.45;cursor:not-allowed}.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:20px 0 40px}.benefit{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--line);padding:15px;border-radius:15px}.benefit .ico{font-size:1.7rem}.benefit strong{display:block;font-size:.91rem}.benefit small{display:block;color:var(--muted);margin-top:3px}.section{margin-top:38px;scroll-margin-top:100px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:14px;margin-bottom:17px}.section-head h2{margin:0;font-size:clamp(1.5rem,3vw,2rem);letter-spacing:-.7px}.section-head p{margin:7px 0 0;color:var(--muted)}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:17px 0 22px}.tab{border:1px solid var(--line);background:#fff;color:#414b60;border-radius:999px;padding:10px 15px;font-weight:750}.tab.active,.tab:hover{background:var(--brand);color:#fff;border-color:var(--brand)}.products{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:17px}.product{display:flex;flex-direction:column;overflow:hidden;background:#fff;border:1px solid var(--line);border-radius:var(--radius);transition:.2s}.product:hover{transform:translateY(-3px);box-shadow:var(--shadow)}.product-art{height:165px;background:linear-gradient(135deg,#f0edff,#f5f8ff);display:grid;place-items:center;font-size:4.3rem;position:relative}.tag{position:absolute;top:12px;left:12px;background:#fff;border-radius:99px;padding:5px 9px;font-size:.72rem;color:var(--brand2);font-weight:850}.product-info{padding:15px;display:flex;flex:1;flex-direction:column}.muted{color:var(--muted)}.product-category{font-size:.77rem;color:var(--muted);margin-bottom:6px}.product h3{margin:0 0 8px;font-size:1rem}.product-desc{font-size:.84rem;line-height:1.5;color:var(--muted);margin:0 0 15px}.price-row{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:auto}.price{font-weight:900;font-size:1.15rem}.add{border:0;background:var(--brand);color:white;border-radius:12px;width:40px;height:40px;font-size:1.4rem}.empty{grid-column:1/-1;background:#fff;border:1px dashed var(--line);border-radius:16px;text-align:center;padding:35px;color:var(--muted)}.info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.info-card{padding:22px;border:1px solid var(--line);background:#fff;border-radius:var(--radius)}.info-card .big{font-size:2rem}.info-card h3{margin:10px 0 7px}.info-card p{color:var(--muted);line-height:1.6;margin:0}.support-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:18px}.panel{border:1px solid var(--line);background:#fff;border-radius:var(--radius);padding:22px}.panel h3{margin-top:0}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:.88rem;font-weight:750}.field input,.field select,.field textarea{width:100%;border:1px solid #d9dfeb;border-radius:10px;padding:12px;background:#fff;outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--brand);box-shadow:0 0 0 3px #6d4aff18}.field textarea{min-height:110px;resize:vertical}.notice{background:#fff7df;color:#755515;border:1px solid #f2df9b;padding:13px 15px;border-radius:12px;font-size:.88rem;line-height:1.5}.faq details{padding:15px 0;border-bottom:1px solid var(--line)}.faq summary{font-weight:800;cursor:pointer}.faq details p{color:var(--muted);line-height:1.6}.footer{background:var(--dark);color:#fff;padding:34px 22px}.footer-inner{max-width:1200px;margin:auto;display:flex;justify-content:space-between;gap:22px;flex-wrap:wrap}.footer p{color:#b8c0d2;font-size:.9rem;line-height:1.6}.footer a{color:#ded7ff}.overlay{display:none;position:fixed;inset:0;background:#080d1db5;z-index:50}.overlay.open{display:block}.drawer{position:absolute;right:0;top:0;height:100%;width:min(480px,100%);background:#fff;padding:23px;display:flex;flex-direction:column;box-shadow:-10px 0 40px #0002}.drawer-head{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:16px}.drawer-head h2{margin:0}.close{border:0;border-radius:50%;width:38px;height:38px;background:#f0f2f7;font-size:1.35rem}.cart-items{overflow:auto;flex:1;padding:10px 0}.cart-item{display:grid;grid-template-columns:45px 1fr auto;gap:10px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)}.cart-emoji{font-size:2rem}.cart-item h4{margin:0 0 5px;font-size:.92rem}.qty{display:flex;align-items:center;gap:8px;margin-top:7px}.qty button{width:27px;height:27px;border:1px solid var(--line);background:white;border-radius:7px}.cart-bottom{border-top:1px solid var(--line);padding-top:16px}.total{display:flex;justify-content:space-between;font-size:1.15rem;font-weight:900;margin-bottom:14px}.hint{font-size:.78rem;color:var(--muted);line-height:1.5}.toast{position:fixed;z-index:80;bottom:20px;left:50%;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:var(--dark);color:#fff;border-radius:99px;padding:12px 18px;transition:.2s;box-shadow:var(--shadow);max-width:90%;text-align:center}.toast.show{opacity:1;transform:translate(-50%,0)}.modal{display:none;position:fixed;inset:0;z-index:60;background:#080d1db5;place-items:center;padding:18px}.modal.open{display:grid}.modal-box{width:min(650px,100%);max-height:90vh;overflow:auto;background:#fff;border-radius:20px;padding:24px}.modal-top{display:flex;align-items:center;justify-content:space-between;gap:12px}.modal-top h2{margin:0}.payment-options{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:15px 0}.pay-option{border:1px solid var(--line);border-radius:12px;padding:14px;display:flex;gap:10px;align-items:center}.pay-option:has(input:checked){border-color:var(--brand);background:#f5f2ff}.pay-option input{accent-color:var(--brand)}.pay-option strong{display:block}.pay-option small{color:var(--muted)}.legal{font-size:.83rem;line-height:1.6;color:var(--muted)}.secure-list{display:grid;gap:9px;margin-top:14px}.secure-list div{display:flex;gap:9px;align-items:flex-start}.secure-list b{color:var(--green)}@media(max-width:900px){.products{grid-template-columns:repeat(3,minmax(0,1fr))}.hero{padding:34px}.support-layout{grid-template-columns:1fr}}@media(max-width:650px){.nav{padding:13px 14px;gap:10px;flex-wrap:wrap}.logo{font-size:1.35rem}.search{order:3;flex-basis:100%}.nav-actions{margin-left:auto}.nav-btn{padding:10px 11px;font-size:.85rem}main{padding:18px 14px 45px}.hero{grid-template-columns:1fr;padding:28px 23px;min-height:0}.hero-art{display:none}.hero h1{font-size:2.55rem}.benefits,.info-grid{grid-template-columns:1fr;gap:9px}.benefit{padding:12px}.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.product-art{height:125px;font-size:3.5rem}.product-info{padding:11px}.product h3{font-size:.92rem}.product-desc{font-size:.78rem}.price{font-size:1.02rem}.support-layout{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.payment-options{grid-template-columns:1fr}.section-head{align-items:flex-start;flex-direction:column}}@media(max-width:360px){.products{grid-template-columns:1fr}}
+</style>
+</head>sd
+<body>
+<div class="announcement">✨ OmniVibe: variedade, praticidade e estilo em um só lugar</div>
+<header class="topbar">
+  <nav class="nav" aria-label="Navegação principal">
+    <a class="logo" href="#inicio" aria-label="OmniVibe início">omni<span>vibe</span>.</a>
+    <div class="search"><b aria-hidden="true">⌕</b><input id="search" type="search" placeholder="Buscar produtos..." aria-label="Buscar produtos"></div>
+    <div class="nav-actions"><button class="nav-btn" id="accountBtn" type="button">👤 Conta</button><button class="nav-btn strong" id="cartOpen" type="button">🛒 Carrinho <span class="count" id="count">0</span></button></div>
+  </nav>
+</header>
+<main id="inicio">
+  <section class="hero">
+    <div><span class="eyebrow">Descubra a OmniVibe</span><h1>O que você procura, em um só lugar.</h1><p>Explore produtos de tecnologia, casa, moda e acessórios. Uma experiência de compra simples, organizada e feita para você.</p><a class="btn light" href="#produtos">Explorar produtos ↓</a></div>
+    <div class="hero-art" aria-hidden="true">🛍️</div>
+  </section>
+  <section class="benefits" aria-label="Vantagens da loja">
+    <div class="benefit"><span class="ico">📦</span><div><strong>Variedade de produtos</strong><small>Escolhas para diferentes necessidades</small></div></div>
+    <div class="benefit"><span class="ico">🔒</span><div><strong>Compra com segurança</strong><small>Pagamentos devem ser processados por provedor confiável</small></div></div>
+    <div class="benefit"><span class="ico">💬</span><div><strong>Suporte ao cliente</strong><small>Canal para dúvidas e solicitações</small></div></div>
+  </section>
+
+  <section class="section" id="produtos">
+    <div class="section-head"><div><h2>Produtos em destaque</h2><p>Produtos e preços abaixo são exemplos para personalizar.</p></div></div>
+    <div class="tabs" id="categories" aria-label="Categorias"></div>
+    <div class="products" id="products" aria-live="polite"></div>
+  </section>
+
+  <section class="section" id="pagamentos">
+    <div class="section-head"><div><h2>Pagamentos e entrega</h2><p>Informações claras ajudam o cliente a comprar com confiança.</p></div></div>
+    <div class="info-grid">
+      <article class="info-card"><span class="big">⚡</span><h3>Pix</h3><p>O pagamento Pix será confirmado pelo provedor integrado no servidor. Não confie apenas em comprovantes enviados pelo cliente.</p></article>
+      <article class="info-card"><span class="big">💳</span><h3>Cartão de crédito</h3><p>O cartão deve ser processado em checkout seguro do Mercado Pago ou provedor equivalente. Não armazene dados de cartão no site.</p></article>
+      <article class="info-card"><span class="big">🚚</span><h3>Entrega e pedidos</h3><p>Prazo, frete, rastreio e status de pedido deverão vir do sistema de pedidos depois da configuração do backend.</p></article>
+    </div>
+  </section>
+
+  <section class="section" id="suporte">
+    <div class="section-head"><div><h2>Central de atendimento</h2><p>Organize as dúvidas e os pedidos de suporte dos seus clientes.</p></div></div>
+    <div class="support-layout">
+      <div class="panel"><h3>Como podemos ajudar?</h3><p class="muted">Escolha o assunto no formulário ao lado. Nesta versão de demonstração, os dados não são enviados nem armazenados em servidor.</p><div class="secure-list"><div><b>✓</b><span>Pedidos e entregas</span></div><div><b>✓</b><span>Trocas, devoluções e reembolsos</span></div><div><b>✓</b><span>Dúvidas sobre produtos e pagamentos</span></div></div><p class="hint">Antes de publicar, configure um e-mail comercial ou atendimento oficial e uma política de privacidade.</p></div>
+      <form class="panel" id="supportForm">
+        <h3>Enviar uma solicitação</h3>
+        <div class="form-grid">
+          <div class="field"><label for="supportName">Nome</label><input id="supportName" name="name" autocomplete="name" maxlength="80" required placeholder="Seu nome"></div>
+          <div class="field"><label for="supportEmail">E-mail</label><input id="supportEmail" name="email" type="email" autocomplete="email" maxlength="150" required placeholder="voce@email.com"></div>
+          <div class="field full"><label for="supportTopic">Assunto</label><select id="supportTopic" name="topic" required><option value="">Selecione uma opção</option><option>Pedido e entrega</option><option>Produto</option><option>Pagamento</option><option>Troca ou devolução</option><option>Outro assunto</option></select></div>
+          <div class="field full"><label for="supportMessage">Mensagem</label><textarea id="supportMessage" name="message" maxlength="1500" required placeholder="Descreva como podemos ajudar"></textarea></div>
+          <div class="field full"><button class="btn" type="submit">Preparar solicitação</button></div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="section" id="seguranca">
+    <div class="section-head"><div><h2>Segurança e transparência</h2><p>Boas práticas que precisam ser aplicadas no sistema completo.</p></div></div>
+    <div class="panel">
+      <div class="secure-list">
+        <div><b>✓</b><span><strong>HTTPS:</strong> publicar somente com conexão segura e certificado válido.</span></div>
+        <div><b>✓</b><span><strong>Pagamentos:</strong> usar checkout/tokenização do provedor; nunca colocar chaves secretas no JavaScript ou HTML.</span></div>
+        <div><b>✓</b><span><strong>Servidor:</strong> validar preços, estoque, permissões e pagamentos no backend, não apenas no navegador.</span></div>
+        <div><b>✓</b><span><strong>Contas:</strong> autenticação segura, senhas com hash forte, controle de acesso e recuperação protegida.</span></div>
+        <div><b>✓</b><span><strong>Proteção:</strong> validação de entrada, consultas parametrizadas, limitação de tentativas, logs, backups e atualização das dependências.</span></div>
+        <div><b>✓</b><span><strong>Privacidade:</strong> coletar apenas dados necessários e publicar políticas de privacidade, troca, devolução e entrega adequadas ao negócio.</span></div>
+      </div>
+      <p class="notice" style="margin-top:18px"><strong>Atenção:</strong> esta página é um protótipo de interface. Ela não implementa autenticação real, banco de dados, antifraude, processamento de pagamentos nem proteção completa contra ataques. Não use dados pessoais ou de cartão reais nesta demonstração.</p>
+    </div>
+  </section>
+
+  <section class="section faq" id="duvidas">
+    <div class="section-head"><div><h2>Perguntas frequentes</h2><p>Uma área para responder às dúvidas comuns dos clientes.</p></div></div>
+    <div class="panel">
+      <details><summary>Como faço um pedido?</summary><p>Escolha os produtos, adicione ao carrinho e siga para o checkout quando o sistema de pedidos estiver configurado.</p></details>
+      <details><summary>Quais formas de pagamento serão aceitas?</summary><p>A loja está planejada para aceitar Pix e cartão através de um provedor de pagamentos integrado. Nesta versão, os pagamentos ainda não são processados.</p></details>
+      <details><summary>Como acompanho a entrega?</summary><p>Depois da integração com o backend e a transportadora, o cliente poderá consultar o status do pedido pela área da conta ou pelo suporte.</p></details>
+      <details><summary>Como solicito troca ou devolução?</summary><p>Use a Central de Atendimento. A política final deve ser publicada pela loja e seguir as regras aplicáveis ao comércio eletrônico brasileiro.</p></details>
+    </div>
+  </section>
+  <section class="section" id="contato">
+    <div class="panel"><h2 style="margin-top:0">Fale com a OmniVibe</h2><p class="muted">Adicione aqui seu e-mail comercial, WhatsApp oficial, horário de atendimento e endereço empresarial, se aplicável, antes de publicar.</p><a class="btn outline" href="#suporte">Ir para o suporte</a></div>
+  </section>
+</main>
+<footer class="footer"><div class="footer-inner"><div><a class="logo" href="#inicio" style="color:#fff">omni<span>vibe</span>.</a><p>Variedade para o seu dia a dia.</p></div><div><strong>Atendimento</strong><p><a href="#suporte">Central de suporte</a><br><a href="#duvidas">Perguntas frequentes</a></p></div><div><strong>Informações</strong><p><a href="#pagamentos">Pagamentos e entrega</a><br><a href="#seguranca">Segurança e privacidade</a></p></div><div><strong>© <span id="year"></span> OmniVibe</strong><p>Produtos demonstrativos — personalize antes de publicar.</p></div></div></footer>
+
+<div class="overlay" id="cartOverlay" role="dialog" aria-modal="true" aria-label="Carrinho de compras"><aside class="drawer"><div class="drawer-head"><h2>Seu carrinho</h2><button class="close" id="cartClose" type="button" aria-label="Fechar">×</button></div><div class="cart-items" id="cartItems"></div><div class="cart-bottom"><div class="total"><span>Total estimado</span><span id="total">R$ 0,00</span></div><button class="btn" id="goCheckout" style="width:100%" disabled>Continuar para pagamento</button><p class="hint">O valor final, frete, estoque e pagamento precisam ser confirmados pelo servidor antes de concluir uma compra.</p></div></aside></div>
+
+<div class="modal" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle"><div class="modal-box"><div class="modal-top"><h2 id="checkoutTitle">Finalizar compra</h2><button class="close" id="checkoutClose" type="button" aria-label="Fechar">×</button></div><p class="muted">Escolha como gostaria de pagar. A integração real ainda precisa ser configurada.</p><div class="notice">Demonstração: nenhuma cobrança será feita e nenhum dado de cartão deve ser informado aqui.</div><div class="payment-options"><label class="pay-option"><input type="radio" name="payment" value="Pix" checked><span><strong>⚡ Pix</strong><small>Pagamento instantâneo</small></span></label><label class="pay-option"><input type="radio" name="payment" value="Cartão"><span><strong>💳 Cartão</strong><small>Crédito ou débito, conforme provedor</small></span></label></div><div class="field"><label for="checkoutEmail">E-mail para contato (demonstração)</label><input id="checkoutEmail" type="email" maxlength="150" placeholder="voce@email.com"></div><p class="legal">Para aceitar pagamentos reais, o próximo passo é criar o backend e conectar o checkout seguro do Mercado Pago, incluindo validação de notificações/webhooks no servidor.</p><button class="btn" id="paymentContinue" style="width:100%">Ver instruções para ativar pagamentos</button></div></div>
+
+<div class="modal" id="accountModal" role="dialog" aria-modal="true" aria-labelledby="accountTitle"><div class="modal-box"><div class="modal-top"><h2 id="accountTitle">Área do cliente</h2><button class="close" id="accountClose" type="button" aria-label="Fechar">×</button></div><p class="muted">A conta do cliente será ativada quando houver backend seguro. Não digite senhas reais nesta demonstração.</p><div class="notice">Cadastro, login, histórico de pedidos e recuperação de senha ainda não estão conectados a um servidor.</div><div class="secure-list"><div><b>✓</b><span>Cadastro e autenticação protegidos</span></div><div><b>✓</b><span>Histórico e acompanhamento de pedidos</span></div><div><b>✓</b><span>Dados de entrega e preferências</span></div></div><button class="btn outline" id="accountOk" style="width:100%;margin-top:18px">Entendi</button></div></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+"use strict";
+// Catálogo de demonstração. Em produção, produtos e preços devem vir do servidor.
+const catalog = [
+ {id:1,name:"Fone Bluetooth",category:"Tecnologia",price:79.90,emoji:"🎧",tag:"Popular",description:"Som sem fio para acompanhar sua rotina."},
+ {id:2,name:"Garrafa térmica",category:"Casa",price:49.90,emoji:"🧴",tag:"Dia a dia",description:"Praticidade para levar sua bebida."},
+ {id:3,name:"Relógio casual",category:"Acessórios",price:89.90,emoji:"⌚",tag:"Estilo",description:"Um toque moderno para o seu visual."},
+ {id:4,name:"Luminária LED",category:"Casa",price:59.90,emoji:"💡",tag:"Destaque",description:"Iluminação aconchegante para seu espaço."},
+ {id:5,name:"Mochila urbana",category:"Acessórios",price:99.90,emoji:"🎒",tag:"Versátil",description:"Leve seus itens essenciais com conforto."},
+ {id:6,name:"Suporte para celular",category:"Tecnologia",price:29.90,emoji:"📱",tag:"Prático",description:"Mais comodidade para assistir e trabalhar."},
+ {id:7,name:"Kit organizador",category:"Casa",price:39.90,emoji:"🗂️",tag:"Organização",description:"Ajuda a manter tudo no seu lugar."},
+ {id:8,name:"Óculos de sol",category:"Moda",price:54.90,emoji:"🕶️",tag:"Novo",description:"Um acessório para completar seu estilo."},
+ {id:9,name:"Bolsa compacta",category:"Moda",price:69.90,emoji:"👜",tag:"Tendência",description:"Uma opção prática para levar o essencial."},
+ {id:10,name:"Mouse sem fio",category:"Tecnologia",price:44.90,emoji:"🖱️",tag:"Home office",description:"Conforto para estudar e trabalhar."},
+ {id:11,name:"Almofada decorativa",category:"Casa",price:34.90,emoji:"🛋️",tag:"Conforto",description:"Renove seu ambiente com um detalhe."},
+ {id:12,name:"Carteira minimalista",category:"Acessórios",price:32.90,emoji:"👛",tag:"Compacta",description:"Organize cartões e documentos."}
+];
+const brl = n => n.toLocaleString("pt-BR",{style:"currency",currency:"BRL"});
+let category = "Todos";
+let cart = [];
+let toastTimer;
+const $ = id => document.getElementById(id);
+function toast(message){$("toast").textContent=message;$("toast").classList.add("show");clearTimeout(toastTimer);toastTimer=setTimeout(()=>$("toast").classList.remove("show"),2800)}
+function renderCategories(){
+ const cats=["Todos",...new Set(catalog.map(p=>p.category))];
+ $("categories").innerHTML=cats.map(c=>`<button type="button" class="tab ${c===category?"active":""}" data-cat="${c}">${c}</button>`).join("");
+ $("categories").querySelectorAll("[data-cat]").forEach(b=>b.addEventListener("click",()=>{category=b.dataset.cat;renderCategories();renderProducts()}));
+}
+function renderProducts(){
+ const term=$("search").value.trim().toLocaleLowerCase("pt-BR");
+ const found=catalog.filter(p=>(category==="Todos"||p.category===category)&&`${p.name} ${p.category} ${p.description}`.toLocaleLowerCase("pt-BR").includes(term));
+ if(!found.length){$("products").innerHTML='<div class="empty">Nenhum produto encontrado. Tente outra busca ou categoria.</div>';return}
+ // Dados são estáticos e controlados pela loja; textContent seria preferível para conteúdo remoto.
+ $("products").innerHTML=found.map(p=>`<article class="product"><div class="product-art"><span class="tag">${p.tag}</span><span aria-hidden="true">${p.emoji}</span></div><div class="product-info"><div class="product-category">${p.category}</div><h3>${p.name}</h3><p class="product-desc">${p.description}</p><div class="price-row"><span class="price">${brl(p.price)}</span><button class="add" type="button" data-add="${p.id}" aria-label="Adicionar ${p.name}">+</button></div></div></article>`).join("");
+ $("products").querySelectorAll("[data-add]").forEach(b=>b.addEventListener("click",()=>add(Number(b.dataset.add))));
+}
+function add(id){const p=catalog.find(x=>x.id===id);if(!p)return;const item=cart.find(x=>x.id===id);if(item)item.qty++;else cart.push({id:p.id,qty:1});renderCart();toast("Produto adicionado ao carrinho.")}
+function changeQty(id,delta){const item=cart.find(x=>x.id===id);if(!item)return;item.qty+=delta;cart=cart.filter(x=>x.qty>0);renderCart()}
+function renderCart(){
+ const count=cart.reduce((s,x)=>s+x.qty,0);const total=cart.reduce((s,x)=>{const p=catalog.find(p=>p.id===x.id);return s+(p?p.price*x.qty:0)},0);
+ $("count").textContent=count;$("total").textContent=brl(total);$("goCheckout").disabled=!cart.length;
+ if(!cart.length){$("cartItems").innerHTML='<div class="empty" style="margin-top:15px">Seu carrinho está vazio.<br>Escolha um produto para começar.</div>';return}
+ $("cartItems").innerHTML=cart.map(x=>{const p=catalog.find(p=>p.id===x.id);return `<div class="cart-item"><span class="cart-emoji">${p.emoji}</span><div><h4>${p.name}</h4><small class="muted">${brl(p.price)} cada</small><div class="qty"><button data-id="${p.id}" data-delta="-1" aria-label="Diminuir">−</button><span>${x.qty}</span><button data-id="${p.id}" data-delta="1" aria-label="Aumentar">+</button></div></div><strong>${brl(p.price*x.qty)}</strong></div>`}).join("");
+ $("cartItems").querySelectorAll("[data-id]").forEach(b=>b.addEventListener("click",()=>changeQty(Number(b.dataset.id),Number(b.dataset.delta))));
+}
+function showModal(id){$(id).classList.add("open");document.body.style.overflow="hidden"}
+function hideModal(id){$(id).classList.remove("open");if(!document.querySelector(".modal.open")&&!$("cartOverlay").classList.contains("open"))document.body.style.overflow=""}
+$("search").addEventListener("input",renderProducts);
+$("cartOpen").addEventListener("click",()=>{$("cartOverlay").classList.add("open");document.body.style.overflow="hidden"});
+$("cartClose").addEventListener("click",()=>{$("cartOverlay").classList.remove("open");document.body.style.overflow=""});
+$("cartOverlay").addEventListener("click",e=>{if(e.target===$("cartOverlay")){$("cartOverlay").classList.remove("open");document.body.style.overflow=""}});
+$("goCheckout").addEventListener("click",()=>{if(!cart.length)return;$("cartOverlay").classList.remove("open");showModal("checkoutModal")});
+$("checkoutClose").addEventListener("click",()=>hideModal("checkoutModal"));
+$("accountBtn").addEventListener("click",()=>showModal("accountModal"));
+$("accountClose").addEventListener("click",()=>hideModal("accountModal"));
+$("accountOk").addEventListener("click",()=>hideModal("accountModal"));
+$("paymentContinue").addEventListener("click",()=>toast("Para ativar pagamentos reais, precisamos configurar o backend e o Mercado Pago."));
+document.querySelectorAll(".modal").forEach(m=>m.addEventListener("click",e=>{if(e.target===m)hideModal(m.id)}));
+document.addEventListener("keydown",e=>{if(e.key==="Escape"){document.querySelectorAll(".modal.open").forEach(m=>hideModal(m.id));$("cartOverlay").classList.remove("open");document.body.style.overflow=""}});
+$("supportForm").addEventListener("submit",e=>{e.preventDefault();if(!e.currentTarget.reportValidity())return;toast("Formulário demonstrativo: ainda não foi enviado a um servidor.");e.currentTarget.reset()});
+$("year").textContent=new Date().getFullYear();
+renderCategories();renderProducts();renderCart();
+</script>
+</body>
+</html>
